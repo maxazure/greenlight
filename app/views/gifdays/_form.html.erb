@@ -12,26 +12,25 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :title %>
+    <%= form.label :title %><br />
     <%= form.text_field :title, id: :gifday_title %>
   </div>
 
   <div class="field">
-    <%= form.label :body %>
-    <%= form.text_field :body, id: :gifday_body %>
+    <%= form.label :body %><br />
+    <%= form.text_area :body, id: :gifday_body, size: '80x5' %>
   </div>
 
   <div class="field">
-    <%= form.label :daynumber %>
-    <%= form.number_field :daynumber, id: :gifday_daynumber %>
-  </div>
-
-  <div class="field">
-    <%= form.label :companyname %>
+    <%= form.label :companyname %><br />
     <%= form.text_field :companyname, id: :gifday_companyname %>
   </div>
-
+  <br /><br />
   <div class="actions">
     <%= form.submit %>
   </div>
+
+  <br /><br />
+  <br /><br />
+  <br /><br />
 <% end %>

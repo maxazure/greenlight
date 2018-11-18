@@ -29,6 +29,9 @@ background-image: url(/images/Background-Image.jpg);
 }
 #bd{
   background-color: #FFFFFF;
+  background-image: url(/images/body-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
   padding: 28px;
   overflow:hidden;
 }
