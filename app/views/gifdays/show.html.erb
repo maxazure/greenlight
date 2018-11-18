@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @gifday.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @gifday.body %>
+</p>
+
+<p>
+  <strong>Daynumber:</strong>
+  <%= @gifday.daynumber %>
+</p>
+
+<p>
+  <strong>Companyname:</strong>
+  <%= @gifday.companyname %>
+</p>
+
+<%= link_to 'Edit', edit_gifday_path(@gifday) %> |
+<%= link_to 'Back', gifdays_path %>

@@ -1,0 +1,27 @@
+<div class="container">
+
+    <div id="hd">
+      <h1>INVERCARGILL ADVENT CALENDAR</h1>
+    </div>
+
+    <div id="bd">
+
+      <div class="notice-text">
+        Click on the boxes each day in December for deals and special offers
+        <br />from the cities top retailers.
+      </div>
+
+        <div id="day-list">
+        <% @gifdays.each do |gifday| %>
+          <div class="day-box"><%= link_to gifday.title, "/detail/#{gifday.id}" %></div>
+        <% end %>
+        </div>
+
+          <div class="box-bottom"></div>
+    </div>
+
+    <div id="ft">
+      copyright all reserved.
+    </div>
+
+</div>

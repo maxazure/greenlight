@@ -1,0 +1,2 @@
+class Gifday < ApplicationRecord
+end
