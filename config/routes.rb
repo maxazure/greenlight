@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :pageparameters
   root 'home#index'
   get '/detail/:id', to: 'home#detail'
   resources :gifdays

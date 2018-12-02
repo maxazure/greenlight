@@ -1,0 +1,2 @@
+class Pageparameter < ApplicationRecord
+end

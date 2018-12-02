@@ -1,0 +1,27 @@
+<%= form_with(model: pageparameter, local: true) do |form| %>
+  <% if pageparameter.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pageparameter.errors.count, "error") %> prohibited this pageparameter from being saved:</h2>
+
+      <ul>
+      <% pageparameter.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %><br />
+    <%= form.text_area :title, id: :pageparameter_title, size: '80x5' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :notice %><br />
+    <%= form.text_area :notice, id: :pageparameter_notice, size: '80x5' %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pageparameters</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Notice</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pageparameters.each do |pageparameter| %>
+      <tr>
+        <td><%= pageparameter.title %></td>
+        <td><%= pageparameter.notice %></td>
+        <td><%= link_to 'Show', pageparameter %></td>
+        <td><%= link_to 'Edit', edit_pageparameter_path(pageparameter) %></td>
+        <td><%= link_to 'Destroy', pageparameter, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pageparameter', new_pageparameter_path %>

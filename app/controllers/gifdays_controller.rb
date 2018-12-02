@@ -5,6 +5,7 @@ class GifdaysController < ApplicationController
   # GET /gifdays.json
   def index
     @gifdays = Gifday.all
+  
   end
 
   # GET /gifdays/1

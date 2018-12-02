@@ -1,14 +1,13 @@
 <div class="container">
 
     <div id="hd">
-      <h1>INVERCARGILL KINDNESS ADVENT CALENDAR</h1>
+      <h1><%= @pageparameter.title %></h1>
     </div>
 
     <div id="bd">
 
       <div class="notice-text">
-        Click on the boxes each day in December for deals and special offers
-        <br />from the cities top retailers.
+        <%= @pageparameter.notice %>
       </div>
 
         <div id="day-list">
